@@ -1,0 +1,4 @@
+{
+    "command": "npm install",
+    "working_directory": "/home/kavia/workspace/code-generation/snake-game-web-platform-0d671f20/snake_game_frontend"
+}
