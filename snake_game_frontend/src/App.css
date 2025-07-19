@@ -29,6 +29,59 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Snake Game Custom Styles */
+.snake-board {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  outline: none;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.snake-score-bar {
+  margin-bottom: 8px;
+  letter-spacing: 0.3px;
+  color: #228B22;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.snake-controls {
+  margin-top: 20px;
+  color: #212121;
+  font-size: 1rem;
+  text-align: center;
+  transition: color 0.2s;
+}
+.snake-controls strong {
+  color: #228B22;
+}
+
+/* Overlay for Game Over */
+.snake-board > div[style*="position: absolute"] {
+  pointer-events: auto;
+  outline: 2px solid #FFD700;
+}
+
+footer {
+  color: #888;
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 650px) {
+  .snake-board {
+    max-width: 96vw;
+    max-height: 96vw;
+  }
+  .snake-score-bar {
+    font-size: 18px;
+  }
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
